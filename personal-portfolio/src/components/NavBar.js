@@ -47,11 +47,11 @@ export const NavBar = () => {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="#"><img src={navIcon1} alt="" /></a>
-                <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/alfonso-scornavacca" target={"_BLANK"}><img src={navIcon1} alt="" /></a>
+                <a href="https://www.facebook.com/AlfonDev89/" target={"_BLANK"}><img src={navIcon2} alt="" /></a>
+                <a href="https://www.instagram.com/alfondev89" target={"_BLANK"}><img src={navIcon3} alt="" /></a>
               </div>
-                <button className='vvd' onClick={()=>{console.log("Connect")}}> <span>Let´s connect</span></button>
+                <button className='vvd' onClick={()=>{console.log("Connect")}}> <a href='https://wa.me/3467419938?text=Hola!%20He%20visto%20tu%20perfil%20y%20me%20ha%20interesado.' target={"_BLANK"}>Send WhatsApp</a></button>
             </span>
           </Navbar.Collapse>
         </Container>

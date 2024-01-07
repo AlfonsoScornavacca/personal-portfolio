@@ -81,6 +81,20 @@ p.success {
 p.danger {
 	color: red;
 }
+
+.vvd a{
+  color: #fff  !important;
+  text-decoration: none;
+  
+}
+.vvd a:hover{
+  color: #000  !important;
+  text-decoration: none;
+  
+}
+#gh{
+  text-decoration: none !important;
+}
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
