@@ -44,23 +44,23 @@ export const Skills = () => {
                         <Carousel className="skill-slider" infinite={true} responsive={responsive}>
                             <div className="item">
                                 <img src={meter1} alt="first item"></img>
-                                <h2>React</h2>
+                                <h5>React</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="first item"></img>
-                                <h2>Express</h2>
+                                <h5>Express</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="first item"></img>
-                                <h2>Cloud Administrator</h2>
+                                <h5> Azure Cloud Administrator</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="first item"></img>
-                                <h2>Power Platform</h2>
+                                <h5>Power Platform</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="first item"></img>
-                                <h2>Sharepoint</h2>
+                                <h5>Sharepoint</h5>
                             </div>
                         </Carousel>
                     </div>
