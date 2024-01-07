@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import headerImg from '../assets/img/header-img.svg'
 import { useEffect , useState } from "react";
 import TrackVisibility from 'react-on-screen';
+import { ArrowRightCircle } from 'react-bootstrap-icons';
 
 
 export const Banner = () => {
@@ -12,6 +13,8 @@ export const Banner = () => {
     const [index, setIndex] = useState(1);
     const toRotate = [ "Web Developer", "Cloud Admin", "Security Admin" ];
     const period = 300;
+
+
     const tick = () => {
         let i = loopNum % toRotate.length;
         let fullText = toRotate[i];
@@ -52,7 +55,7 @@ export const Banner = () => {
                         <span className="tagline">Wolcome to my portfolio</span>
                         <h1>{`I'm Alfonso Scornavacca `}<br></br><span className="wrap">{text}</span></h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <button onClick={() => console.log('connect')}>Let’s Connect</button>
+                        <button onClick={() => console.log('connect')} >Let’s Connect <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
