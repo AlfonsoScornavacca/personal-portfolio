@@ -3,6 +3,7 @@ import headerImg from '../assets/img/header-img.svg'
 import { useEffect , useState } from "react";
 import TrackVisibility from 'react-on-screen';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
+import 'animate.css';
 
 
 export const Banner = () => {
