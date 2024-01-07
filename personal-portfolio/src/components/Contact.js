@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import TrackVisibility from 'react-on-screen';
+import 'animate.css';
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -41,6 +42,7 @@ export const Contact = () => {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
     }
   };
+  
 
   return (
     <section className="contact" id="connect">
