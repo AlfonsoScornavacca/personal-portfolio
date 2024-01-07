@@ -4,8 +4,6 @@ import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import { Container, Row, Col } from "react-bootstrap";
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 
 
@@ -38,9 +36,7 @@ export const Skills = () => {
                         <h2>
                             Skills
                         </h2>
-                        <p>
-                            Lorem
-                        </p>
+
                         <Carousel className="skill-slider" infinite={true} responsive={responsive}>
                             <div className="item">
                                 <img src={meter1} alt="first item"></img>

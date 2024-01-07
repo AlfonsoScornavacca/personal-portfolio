@@ -99,6 +99,13 @@ p.danger {
 #photo{
   border-radius: 40px;
 }
+
+.alert1{
+  display: none;
+}
+.alert2{
+  display: block;
+}
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;

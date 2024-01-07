@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
+import { Alert } from "react-bootstrap";
 
 export const Contact = () => {
   const formInitialDetails = {
@@ -15,6 +16,7 @@ export const Contact = () => {
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({});
+  const [alert, setAlert] = useState(false)
 
   const onFormUpdate = (category, value) => {
       setFormDetails({
@@ -25,6 +27,7 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setAlert(true);
     setButtonText("Sending...");
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
@@ -41,6 +44,7 @@ export const Contact = () => {
     } else {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
     }
+    
   };
   
 
@@ -84,6 +88,7 @@ export const Contact = () => {
                         <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                       </Col>
                     }
+                    <Alert className={alert == false ? "alert1" : "alert2"} variant="danger">Sorry! the server is down</Alert>
                   </Row>
                 </form>
               </div>}
