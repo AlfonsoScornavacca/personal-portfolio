@@ -1,8 +1,12 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/certifiedAzure.png";
+import projImg2 from "../assets/img/sc-200.png";
+import projImg3 from "../assets/img/ms-500.png";
+import projImg4 from "../assets/img/certifiedJS.png";
+import projImg5 from "../assets/img/react.png";
+import projImg6 from "../assets/img/JSCertificate.png";
+import projImg7 from "../assets/img/teclab.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
@@ -11,35 +15,50 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Azure Fundamentals",
+      description: "Microsoft",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Security Operations Analyst Associate",
+      description: "Microsoft",
       imgUrl: projImg2,
+      ids:"ID: 46BEF32C211A552F"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Security Administrator Associate",
+      description: "Microsoft",
       imgUrl: projImg3,
+      ids:"ID: E8865B71D27E80E1"
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
+      title: "JavaScript",
+      description: "Microsoft",
+      imgUrl: projImg4,
+    },
+
+  ];
+  const devRock = [
+    {
+      title: "React",
+      description: "DevRock",
+      imgUrl: projImg5,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
+      title: "JavaScript",
+      description: "DevRock",
+      imgUrl: projImg6,
     },
+
+
+  ];
+  const teclab = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
+      title: "Regular Student",
+      description: "Teclab",
+      imgUrl: projImg7,
+    }
+
   ];
 
   return (
@@ -50,18 +69,18 @@ export const Projects = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h2>Certifications</h2>
+                <p>You can see my Microsoft certifications, DevRock school certifications and my certification from Teclab where I am currently study a technical degree</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Microsoft</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">DevRock</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                      <Nav.Link eventKey="third">Teclab</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -80,10 +99,32 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Row>
+                        {
+                          devRock.map((devRock, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...devRock}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Row>
+                        {
+                          teclab.map((teclab, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...teclab}
+                                />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

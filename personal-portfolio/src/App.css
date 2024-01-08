@@ -465,6 +465,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -640,4 +642,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+#cv{
+  text-decoration: none !important;
+  color: #fff !important;
 }

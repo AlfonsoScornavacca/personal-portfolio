@@ -1,9 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { MailchimpForm } from "./MailchimpForm";
-import logo from "../assets/img/logo.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
+import pdf from "../assets/img/CV-Alfonso-Scornavacca.pdf"
+import { ArrowDownCircle } from 'react-bootstrap-icons';
 
 export const Footer = () => {
   return (
@@ -12,7 +13,7 @@ export const Footer = () => {
         <Row className="align-items-center">
           <MailchimpForm />
           <Col size={12} sm={6}>
-            <img src={logo} alt="Logo" />
+            <a  id='pdf' href={pdf} target="_blank" rel="noopener noreferrer" download="CV-Alfonso-Scornavacca.pdf"><button id="cv" onClick={() => console.log('connect')} >Download my CV <ArrowDownCircle size={25} /></button></a>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
