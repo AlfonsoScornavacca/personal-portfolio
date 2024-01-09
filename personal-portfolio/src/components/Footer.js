@@ -13,7 +13,7 @@ export const Footer = () => {
         <Row className="align-items-center">
           <MailchimpForm />
           <Col size={12} sm={6}>
-            <a  id='pdf' href={pdf} target="_blank" rel="noopener noreferrer" download="CV-Alfonso-Scornavacca.pdf"><button id="cv" onClick={() => console.log('connect')} >Download my CV <ArrowDownCircle size={25} /></button></a>
+            <a  id='pdf' href={pdf} target="_blank" rel="noopener noreferrer" download="CV-Alfonso-Scornavacca.pdf"><button id="cv" onClick={() => console.log('connect')} >Download my CV <ArrowDownCircle id="arrow" size={25} /></button></a>
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">

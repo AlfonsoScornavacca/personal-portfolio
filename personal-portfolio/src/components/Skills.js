@@ -39,31 +39,47 @@ export const Skills = () => {
 
                         <Carousel className="skill-slider" infinite={true} responsive={responsive}>
                             <div className="item">
-                                <img src={meter1} alt="first item"></img>
+                                <img src={meter1} alt="React"></img>
                                 <h5>React</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="first item"></img>
+                                <img src={meter2} alt="Express"></img>
                                 <h5>Express</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="first item"></img>
+                                <img src={meter3} alt="Azure Cloud Administrator"></img>
                                 <h5> Azure Cloud Administrator</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="first item"></img>
+                                <img src={meter3} alt="Power Platform"></img>
                                 <h5>Power Platform</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="first item"></img>
+                                <img src={meter3} alt="Sharepoint"></img>
                                 <h5>Sharepoint</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="CSS"></img>
+                                <h5>CSS</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="HTML"></img>
+                                <h5>HTML</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="JavaScript"></img>
+                                <h5>JavaScript</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="SQL"></img>
+                                <h5>SQL</h5>
                             </div>
                         </Carousel>
                     </div>
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-left" src={colorSharp} alt="Image" />
+            <img className="background-image-left" src={colorSharp} alt="backg" />
         </section>
 
     )
