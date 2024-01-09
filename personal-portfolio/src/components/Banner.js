@@ -15,7 +15,6 @@ export const Banner = () => {
     const toRotate = [ "Web Developer", "Cloud Admin", "Security Admin" ];
     const period = 300;
 
-
     const tick = () => {
         let i = loopNum % toRotate.length;
         let fullText = toRotate[i];
@@ -55,7 +54,7 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Wolcome to my portfolio</span>
                         <h1>{`I'm Alfonso Scornavacca `}</h1>
-                        <h2><span className="wrap">{text}</span></h2>
+                        <h2>" <span className="wrap">{text}</span> "</h2>
                         <p>I am 34 years old and I started my studies in web development three years ago.
 Currently I work at Raona company and I have experience in projects to companies like CEPSA, Pluspetrol, Aeropuertos Argentina 2000, Gerdau and more.
 I am a very curious person and I like to learn new technologies, that is why I got certified in cloud Administration and Security.</p>
