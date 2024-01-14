@@ -23,6 +23,7 @@ export const Contact = () => {
         ...formDetails,
         [category]: value
       })
+      setFormDetails(formInitialDetails);
   }
 
   const handleSubmit = async (e) => {
