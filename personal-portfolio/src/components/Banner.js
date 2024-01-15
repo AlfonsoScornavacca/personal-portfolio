@@ -56,7 +56,7 @@ export const Banner = () => {
                         <h1>{`I'm Alfonso Scornavacca `}</h1>
                         <h2>" <span className="wrap">{text}</span> "</h2>
                         <p>I am 34 years old and I started my studies in web development three years ago.
-Currently I work at Raona company and I have experience in projects to companies like CEPSA, Pluspetrol, Aeropuertos Argentina 2000, Gerdau and more.
+Currently I work at Raona company and I have experience in projects to important international companies.
 I am a very curious person and I like to learn new technologies, that is why I got certified in cloud Administration and Security.</p>
                         <a id="gh" href="https://github.com/AlfonsoScornavacca" target={"_BLANK"}><button onClick={() => console.log('connect')} >My GitHub <ArrowRightCircle size={25} /></button></a>
                     </Col>
