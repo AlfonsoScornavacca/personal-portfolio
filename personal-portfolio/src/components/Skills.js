@@ -48,7 +48,7 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Azure Cloud Administrator"></img>
-                                <h5> Azure Cloud Administrator</h5>
+                                <h5> Azure Administrator</h5>
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Power Platform"></img>
