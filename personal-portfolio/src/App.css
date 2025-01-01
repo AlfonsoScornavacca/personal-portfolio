@@ -141,6 +141,7 @@ span.navbar-text {
 .social-icon {
     display: inline-block;
     margin-left: 14px;
+    margin-top: 10px;
 }
 .social-icon a {
     width: 42px;
